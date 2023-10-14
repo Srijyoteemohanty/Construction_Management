@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'assets',
     'progress',
     'expense',
+    'user',
 ]
 
 MIDDLEWARE = [
