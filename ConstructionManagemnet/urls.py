@@ -20,6 +20,11 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('projects/', include('projects.urls')),  # Replace 'your_app' with your app's name
-    path('Sites/', include('Sites.urls')),
+    path('api/', include('projects.urls')),  # Replace 'your_app' with your app's name
+    path('api/', include('sites.urls')),
+    path('api/', include('workforce.urls')),
+    path('api/', include('attendance.urls')),
+    path('api/', include('assets.urls')),
+    path('api/', include('progress.urls')),
+    path('api/', include('expense.urls')),
 ]
